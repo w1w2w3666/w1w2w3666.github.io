@@ -13,15 +13,69 @@
         font-size:50px
       }
      
+    ...
+    .item {
+        font-weight: bold;
+        color: #222222;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 30%;
+        height: 40px;
+        border: 1px solid #CCCCCC;
+    }
+    textarea {
+        width: 50%;
+        height: 80px;
+        border: 1px solid #CCCCCC;
+    }
+    input[type="submit"] {
+        background-color: #007BFF;
+        color: #FFFFFF;
+        height: 50px;
+        width: 100px;
+        border: 1px solid #FFFFFF;
+    }
+</style>
+     
 
-    </style>
   </head>
   <body>    
    
     <center><h1>我是王爽大帅哥</h1></center>
     <img src="1.jpg"  alt="找不到" width=30% >
    
-    <script>alert("我是王爽大帅哥")</script>
+    <div class="contact">
+    <form action="javascript:alert('提交成功')">
+        <h2>联系我们</h2>
+        <p>
+            <div class="item">姓名：</div>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <div class="item">邮箱：</div>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <div class="item">留言：</div>
+            <textarea id="message" name="message" required></textarea>
+        </p>
+        <p>
+            <div class="item">你的身份：</div>
+            <select id="identity" name="identity">
+                <option>中小学生</option>
+                <option>大学生</option>
+                <option>研究生/博士生</option>
+                <option>上班族</option>
+                <option>其他</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="提交">
+        </p>
+    </form>
+</div>
     <a href="4.html" target="_blank"><center><span>进入游戏-小小贪吃蛇</span></center></a>
   </body>
 </html>
